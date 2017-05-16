@@ -1,0 +1,10 @@
+<h1>Flickr Feed</h1>
+<hr><br>
+<%= form_tag root_path, method: :get do %>
+  <%= text_field_tag :flickr_id, "150736122@N04", placeholder: "Flickr ID" %>
+  <%= submit_tag "Load photos" %>
+<% end %>
+
+<% if @flickr_id %>
+  <%= render_flickr_sidebar_widget(@flickr_id, 24) %>
+<% end %>

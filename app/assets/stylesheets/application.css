@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+.flickr {
+  width: 500px;
+}
+
+.flickr_photo {
+  float: left;
+  padding: 2px;
+}
